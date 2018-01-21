@@ -1,0 +1,22 @@
+
+#hometask {
+    display: none;
+}
+
+#projecttask {
+    display: none;
+}
+
+#homeblock {
+    display: none;
+}
+
+#projectblock {
+    display: none;
+}
+
+.container {
+
+	background-image: url('../todolisttask/desk.jpg');
+	 width: 50%;
+}

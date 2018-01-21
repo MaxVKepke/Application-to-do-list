@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Список задач</title>
+</head>
+<body>
+  <div class="container">
+	<div class="head">
+      <h2>ToDo List</h2>
+    </div>
+   <table>
+    <tr>
+        <td>
+            Информация о пользователе:
+            <form>
+                <br>Имя:
+                <br><input type="text" id="uname">
+                <br>Фамилия:
+                <br><input type="text" id="surname">
+                <br>Специальность:
+                <br><input type="text" id="specialization">
+                <br>Должность:
+                <br><input type="text" id="job">
+                <br>Тип:
+                <br><select id="role">
+                    <option selected>User</option>
+                    <option>Student</option>
+                    <option>Developer</option>
+                </select>
+                <br>
+                <br><input type="button" name="submit" value="Добавить пользователя" id="createuser">
+            </form>
+        </td>
+        <td>
+            Добавить задание:
+            <br>
+            <button id="simpletask">Simple task</button>
+            <button id="hometask">Home task</button>
+            <button id="projecttask">Project task</button>
+
+            <br>
+            <div id="simpleblock">
+                <br>Title
+                <br><input type="text" id="simpletitle">
+                <br>Status
+                <br><input type="text" id="simplestatus">
+                <br><button id="addsimple">Добавить</button>
+            </div>
+            <div id="homeblock">
+                <br>Title
+                <br><input type="text" id="hometitle">
+                <br>Status
+                <br><input type="text" id="homestatus">
+                <br>Description
+                <br><input type="text" id="homedescription">
+                <br><button id="addhome">Добавить</button>
+            </div>
+            <div id="projectblock">
+                <br>Title
+                <br><input type="text" id="projecttitle">
+                <br>Status
+                <br><input type="text" id="projectstatus">
+                <br>Description
+                <br><input type="text" id="projectdescription">
+                <br>Deadline
+                <br><input type="text" id="projectdeadline">
+                <br><button id="addproject">Добавить</button>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td id = "tasks">
+
+        </td>
+    </tr>
+  </table>
+ </div>
+</body>
+<script src="main.js"></script>
+</html>
